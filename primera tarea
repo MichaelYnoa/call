@@ -1,0 +1,32 @@
+#include <iostream>
+#include<conio.h>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+    float base = 0, altura = 0, radio = 0, area_t = 0, area_r = 0, vol_cilindro = 0, vol_cono = 0;
+
+    cout << "Este programa calcula el area de un rectangulo y un triangulo equilatero ";
+    cout << "y sera capaz calcular el volumen de un cono (con el radio y la altura) y de un cilindro con la altura del rectangulo ";
+    cout << "y el radio del circulo \n" << endl;
+    cout << "Introduzca la base: "; cin >> base;
+    cout << endl << "Introduzca la altura: "; cin >> altura;
+    cout << endl << "Introduzca el radio: "; cin >> radio;
+
+    area_r = base * altura;
+    area_t = (base * altura) / 2;
+    vol_cilindro = (M_PI * pow(radio,2) * altura);
+    vol_cono = (M_PI * pow(radio,2)* altura)/3;
+
+    cout << "\nLos resultados son: " << endl << endl;
+    cout << "El area de un rectangulo es: " << area_r << endl;
+    cout << "El area del triangulo equilatero es: " << area_t <<endl;
+    cout << "El volumen del cono es: " << vol_cono << endl;
+    cout << "El volumen del cilindro es: " << vol_cilindro << endl;
+
+    getch();
+
+    return 0;
+}
